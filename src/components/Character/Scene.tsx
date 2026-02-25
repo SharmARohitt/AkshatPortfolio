@@ -31,11 +31,14 @@ const Scene = () => {
         alpha: true,
         antialias: window.devicePixelRatio < 2,
         powerPreference: "high-performance",
+        stencil: false,
+        depth: true,
       });
       renderer.setSize(container.width, container.height);
-      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5)); // Reduced from 2 to 1.5 for better performance
       renderer.toneMapping = THREE.ACESFilmicToneMapping;
       renderer.toneMappingExposure = 1;
+      renderer.shadowMap.enabled = false; // Disable shadows for better performance
       canvasDiv.current.appendChild(renderer.domElement);
 
       const camera = new THREE.PerspectiveCamera(14.5, aspect, 0.1, 1000);

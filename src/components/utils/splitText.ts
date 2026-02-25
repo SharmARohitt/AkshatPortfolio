@@ -10,7 +10,10 @@ interface ParaElement extends HTMLElement {
 gsap.registerPlugin(ScrollTrigger);
 
 export default function setSplitText() {
-  ScrollTrigger.config({ ignoreMobileResize: true });
+  ScrollTrigger.config({ 
+    ignoreMobileResize: true,
+    autoRefreshEvents: "visibilitychange,DOMContentLoaded,load" // Reduce refresh events
+  });
   if (window.innerWidth < 900) return;
   const paras: NodeListOf<ParaElement> = document.querySelectorAll(".para");
   const titles: NodeListOf<ParaElement> = document.querySelectorAll(".title");

@@ -1,6 +1,6 @@
-# My Portfolio Wesbite by @red1-for-hek - Overview 🚀
+# Portfolio Website by Akshat Tomar - Overview 🚀
 
-If you are copying this code or forking this repo, please give a credit of my name :(
+If you are copying this code or forking this repo, please give credit :)
 
 ## Instructions 🛠️
 
@@ -8,7 +8,7 @@ I have modified the gsap club plugins with the trial plugins, but with the trial
 
 **Techstack** - React, TypeScript, GSAP, ThreeJS, WebGL, HTML, Css, JavaScript
 
-- [Protfolio-Preview](https://www.redoyanulhaque.me/)
+- [Portfolio-Preview](https://akshattomar.vercel.app/)
 
 ## License
 

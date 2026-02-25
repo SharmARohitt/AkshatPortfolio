@@ -24,6 +24,19 @@
   --vh: 100svh;
 }
 
+/* Performance optimizations */
+* {
+  will-change: auto;
+}
+
+img, video {
+  content-visibility: auto;
+}
+
+:root {
+  font-display: swap;
+}
+
 h1,
 h2,
 h3,
