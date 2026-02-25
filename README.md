@@ -1,14 +1,77 @@
-# Portfolio Website by Akshat Tomar - Overview 🚀
+# Akshat Portfolio
 
-If you are copying this code or forking this repo, please give credit :)
+Personal portfolio website built with React, TypeScript, Vite, GSAP, and Three.js.
 
-## Instructions 🛠️
+## Tech Stack
 
-I have modified the gsap club plugins with the trial plugins, but with the trial plugin you cannot host it🔴. So for Club plugins, Check out here: https://gsap.com/docs/v3/Installation/
+- React 18
+- TypeScript
+- Vite
+- GSAP
+- Three.js / React Three Fiber
 
-**Techstack** - React, TypeScript, GSAP, ThreeJS, WebGL, HTML, Css, JavaScript
+## Prerequisites
 
-- [Portfolio-Preview](https://akshattomar.vercel.app/)
+- Node.js 18+ (recommended: latest LTS)
+- npm 9+
+
+## Installation
+
+1. Clone the repository
+
+```bash
+git clone <your-repo-url>
+cd akshat
+```
+
+2. Install dependencies
+
+```bash
+npm install
+```
+
+3. Configure environment variables
+
+```bash
+cp .env.example .env
+```
+
+Then open `.env` and set your real key:
+
+```env
+GROQ_API_KEY=your_actual_groq_api_key
+```
+
+## Run Locally
+
+Start development server:
+
+```bash
+npm run dev
+```
+
+Default local URL:
+
+```text
+http://localhost:5173
+```
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+Preview production build locally:
+
+```bash
+npm run preview
+```
+
+## Notes
+
+- Keep `.env` private (already ignored by `.gitignore`).
+- If your API key was ever exposed, rotate it in your Groq dashboard.
 
 ## License
 
